@@ -9,6 +9,7 @@ public class OddSum {
     public static int run(String[] args, boolean test) {
 
         ArrayList<Integer> listInt = new ArrayList<>();
+        try {
         int res;
         if (!test) {
             System.out.println("Elements' list :");
@@ -28,9 +29,12 @@ public class OddSum {
         System.out.println("Sum of odd elements : " + res);
         System.out.println("END!");
 
-        return 0;
+      
+    
+    } catch (Exception e) {
+    } 
+		return -1;
     }
-
     public static int sum(ArrayList<Integer> listInt) {
 
         int result = 0;
